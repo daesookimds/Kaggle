@@ -6,73 +6,20 @@ def desc_tagger(dic, value):
     return dic.get(value)
 
 
-def upc_91011_to_12(x):
-    '''
-    convert 9, 10, 11 length of Upc to 12 length of Upc
-    '''
-    length = len(x)
-    if length == 11:
-        return '000'+x
-    elif length == 12:
-        return '00'+x
-    elif length == 13:
-        return '0'+x
-    elif length == 14:
-        return x
-    else:
-        return x
-
-
-def upc_78_to_12(x):
-    '''
-    convert 7, 8 length of Upc to 12 length of Upc
-    '''
-    if len(x) == 9:
-        x = '0'+x
-        x = list(x)
-        if x[6] == '0':
-            return '0'+x[1]+x[2]+x[6]+'0000'+x[3]+x[4]+x[5]+x[7]
-        elif x[6] == '1':
-            return '0'+x[1]+x[2]+x[6]+'0000'+x[3]+x[4]+x[5]+x[7]
-        elif x[6] == '2':
-            return '0'+x[1]+x[2]+x[6]+'0000'+x[3]+x[4]+x[5]+x[7]
-        elif x[6] == '3':
-            return '0'+x[1]+x[2]+x[3]+'00000'+x[4]+x[5]+x[7]
-        elif x[6] == '4':
-            return '0'+x[1]+x[2]+x[3]+x[4]+'00000'+x[5]+x[7]
-        else:
-            return '0'+x[1]+x[2]+x[3]+x[4]+x[5]+'0000'+x[6]+x[7]
-    elif len(x) == 10:
-        x = list(x)
-        if x[6] == '0':
-            return '0'+x[1]+x[2]+x[6]+'0000'+x[3]+x[4]+x[5]+x[7]
-        elif x[6] == '1':
-            return '0'+x[1]+x[2]+x[6]+'0000'+x[3]+x[4]+x[5]+x[7]
-        elif x[6] == '2':
-            return '0'+x[1]+x[2]+x[6]+'0000'+x[3]+x[4]+x[5]+x[7]
-        elif x[6] == '3':
-            return '0'+x[1]+x[2]+x[3]+'00000'+x[4]+x[5]+x[7]
-        elif x[6] == '4':
-            return '0'+x[1]+x[2]+x[3]+x[4]+'00000'+x[5]+x[7]
-        else:
-            return '0'+x[1]+x[2]+x[3]+x[4]+x[5]+'0000'+x[6]+x[7]
-    else:
-        return x
-
-
-def upc_345_to_10(x):
+def upc_3456_to_10(x):
     '''
     convert 3, 4, 5 length of Upc to 10 length of Upc
     '''
     if len(x) == 5:
         x = '00'+x
-        return '00002'+x
+        x = list(x)
+        return '00002'+ x[0]+x[1]+x[2]+x[3]+x[4]
     elif len(x) == 6:
         x = list(x)
         if x[0] == '3':
-            return '00001'+'0'+x[0]+x[1]+x[2]+x[3]
+            return '00004'+'0'+x[0]+x[1]+x[2]+x[3]
         elif x[0] == '4':
-            return '00001'+'0'+x[0]+x[1]+x[2]+x[3]
+            return '00004'+'0'+x[0]+x[1]+x[2]+x[3]
         else:
             return '00002'+'0'+x[0]+x[1]+x[2]+x[3]
     elif len(x) == 7:
@@ -82,7 +29,40 @@ def upc_345_to_10(x):
         elif x[0] == '8':
             return '00003'+'8'+x[1]+x[2]+x[3]+x[4]
         elif x[0] == '9':
-            return '00001'+'9'+x[1]+x[2]+x[3]+x[4]
+            return '00004'+'9'+x[1]+x[2]+x[3]+x[4]
+    elif len(x) == 8:
+        x = list(x)
+        return '0000'+x[0]+x[1]+x[2]+x[3]+x[4]+x[5]
+    else:
+        return x
+
+
+def upc_789101112_to_10(x):
+    '''
+    convert 7~12 lengtho of Upc to 10 length of Upc
+    '''
+    length = len(x)
+    if length == 9:
+        x = '000'+x
+        x = list(x)
+        return x[0]+x[1]+x[2]+x[3]+x[4]+x[5]+x[6]+x[7]+x[8]+x[9]
+    elif length == 10:
+        x = '00'+x
+        x = list(x)
+        return x[0]+x[1]+x[2]+x[3]+x[4]+x[5]+x[6]+x[7]+x[8]+x[9]
+    elif length == 11:
+        x = '0'+x
+        x = list(x)
+        return x[0]+x[1]+x[2]+x[3]+x[4]+x[5]+x[6]+x[7]+x[8]+x[9]
+    elif length == 12:
+        x = list(x)
+        return x[0]+x[1]+x[2]+x[3]+x[4]+x[5]+x[6]+x[7]+x[8]+x[9]
+    elif length == 13:
+        x = list(x)
+        return x[1]+x[2]+x[3]+x[4]+x[5]+x[6]+x[7]+x[8]+x[9]+x[10]
+    elif length == 14:
+        x = list(x)
+        return x[0]+x[1]+x[2]+x[3]+x[4]+x[5]+x[6]+x[7]+x[8]+x[9]
     else:
         return x
 
