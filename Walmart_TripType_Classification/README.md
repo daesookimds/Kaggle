@@ -1,3 +1,4 @@
+<img src="image/title.png" alt="subject_image" width="630" height="100">
 # Walmart Trip Type Classification
 
 ### Aim of classification
