@@ -1,5 +1,4 @@
-<img src="image/title.png" alt="subject_image" width="630" height="100">
-# Walmart Trip Type Classification
+<img src="image/title.png" alt="subject_image" width="850" height="150">
 
 ### Aim of classification
 - Segment 38 TripType of visiting custmoers in Walmart to improve customer's shopping experience.
