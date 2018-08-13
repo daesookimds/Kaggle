@@ -12,7 +12,7 @@
 
 
 ### File description
-- ++Walmart_Preprocessing.ipynb : Data preprocessing++
+- <U>Walmart_Preprocessing.ipynb : Data preprocessing</U>
 
   **1. Fill in missing values and refining data**
   
@@ -50,4 +50,4 @@
       - Add "refund rate" column.
 
 
-- ++preprocessing_functions.py : functions for preprocessing++
+- <U>preprocessing_functions.py : functions for preprocessing</U>
