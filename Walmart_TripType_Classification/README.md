@@ -14,31 +14,40 @@
 ### File description
 - Walmart_Preprocessing.ipynb : Data preprocessing
 
-  1. Fill in missing values and refining data
-    - DepartmentDescription
+  **1. Fill in missing values and refining data**
+  
+    **- DepartmentDescription**
+    
       - Number of missing value - 1361.
       - One of attribute of DepartmentDescription, "MENSWEAR" change to "MENS WEAR".
       - One of attribute of DepartmentDescription, "HEALTH AND BEAUTY AIDS"(only have train data) change to "BEUTY".
       
-    - FinelineNumber
+    **- FinelineNumber**
+    
       - Number of missing value - 4129.
       
-    - Upc
+    **- Upc**
+    
       - Number of missing value - 4129.
       - Range of the length of Upc is 3 to 12, so Restore the length of the Upc to 12.
       - Divide the Upc into manufacturer number and product number.
     
+    
     <img src="image/UPC.png" alt="subject_image" width="600" height="100">
     
-  2. Data encode and derivation
-    - Encode
+  **2. Data encode and derivation**
+  
+    **- Encode**
+    
       - DepartmentDescription
       - Weekday
       - FinelineNumber
       - UPC(Manufacturer part)
       
-    - Derivation
+    **- Derivation**
+    
       - Divide by abs_scancount for each above columns were encoded.
       - Add "refund rate" column.
+
 
 - preprocessing_functions.py : functions for preprocessing
