@@ -12,7 +12,8 @@
 
 
 ### File description
-***- Walmart_Preprocessing.ipynb : Data preprocessing***
+
+- ___Walmart_Preprocessing.ipynb : Data preprocessing___
 
   **1. Fill in missing values and refining data**
   
@@ -50,4 +51,4 @@
       - Add "refund rate" column.
 
 
-***- preprocessing_functions.py : functions for preprocessing***
+- ___preprocessing_functions.py : functions for preprocessing___
