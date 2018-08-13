@@ -13,7 +13,7 @@
 
 ### File description
 
-- ___Walmart_Preprocessing.ipynb : Data preprocessing___
+- ___Preprocessing - make X_train, y_train, X_test.ipynb : Data preprocessing___
 
   **1. Fill in missing values and refining data**
   
