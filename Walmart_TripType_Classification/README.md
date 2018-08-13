@@ -49,6 +49,50 @@
     
       - Divide by abs_scancount for each above columns were encoded.
       - Add "refund rate" column.
+      
+  **3. Feature Selection**
+  
+      - DepartmentDescription : 67 columns
+      - Weekday : 7 columns
+      - FinelineNmber : 5045 columns ( exist in train and test data at the same time )
+      - UPC(Manufacturer part) : 5304 columns ( exist in train and test data at the same time )
+      - ScanCount : 1 column
+      - Refund rate : 1 column
+      
+      total of columns : 10425 columns
+      total of row : 95674 columns ( Group by 'VisitNumber" )
+      train data shape : (95674, 10425)
+
+- ___preprocessing_functions.py : functions for UPC preprocessing___
 
 
-- ___preprocessing_functions.py : functions for preprocessing___
+### Model
+
+- ___Use a tree-based model.___
+
+      - RandomForest
+      - Xgboost
+
+### Summary & Result
+
+- ___Summary___
+
+    - We classified customer types with information about product categories and customer purchase/refund records.
+    
+    - Assumptions through Domain Knowledge and Universal Knowledge for Classification
+  
+        - Use experience knowledge as a buyer
+            - The best-selling items in the same category are likely to be sold.
+            - The same customer will most likely buy the same things they used to buy.
+        
+        - Use all information within a category data(DepartmentDescription, FinelineNumber, UPC, Weekday)
+            - Different customer types will have different product categories that customers purchase.
+            - The more product categories are disaggregated, they can predict more precisely customer types.
+            
+        - Use tree-based model for interaction of features
+      
+      
+- ___Result___
+
+
+### Feedback
