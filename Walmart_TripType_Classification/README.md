@@ -94,5 +94,17 @@
       
 - ___Result___
 
-
+   - Last model selected : Xgboost
+   - Parameter : need more time to Tuning...(now -ing...)
+   
 ### Feedback
+
+- Using too many features
+
+      - The number of features is 10425.
+      - Too many features cause overfitting.
+      
+- Did not consider walmart's own rules for dividing TripType
+
+      - Did not consider walmart's own rules for dividing customer types.
+      - Only focus the rules that the data shows us.
