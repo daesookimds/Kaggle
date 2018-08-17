@@ -101,7 +101,7 @@
    
    - top 20%
    
-   <img src="image/score_01.png" alt="subject_image" width="850" height="150">
+   <img src="image/score_01.png" alt="subject_image" width="800" height="100">
    
 ### Feedback
 
