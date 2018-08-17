@@ -97,6 +97,12 @@
    - Last model selected : Xgboost
    - Parameter : need more time to Tuning...(now -ing...)
    
+   ***Score***
+   
+   - top 20%
+   
+   <img src="image/score_01.png" alt="subject_image" width="850" height="150">
+   
 ### Feedback
 
 - Using too many features
