@@ -95,7 +95,7 @@
 - ___Result___
 
    - Last model selected : Xgboost
-   - Parameter : need more time to Tuning...(now -ing...)
+   - Parameter : 
    
    ***Score***
    
