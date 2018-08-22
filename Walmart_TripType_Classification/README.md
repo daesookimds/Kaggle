@@ -1,5 +1,6 @@
 <img src="image/title.png" alt="subject_image" width="850" height="150">
 
+```Project Period : 2018.07.13 ~ 2018.08.11```
 
 ### Aim of classification
 - Segment 38 TripType of visiting custmoers in Walmart to improve customer's shopping experience.
