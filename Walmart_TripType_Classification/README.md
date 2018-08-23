@@ -169,7 +169,7 @@
       - 스캔카운트의 절대값 합으로 각각의 특성들을 나누어 인코드 해준다.(각 상품별 구매한 비율을 나타내기 위함)
       - 환불 비율을 의미하는 refund_rate 
       
-  **3. Feature Selection**
+  **3. **
   
       - DepartmentDescription : 67 열
       - Weekday : 7 열
