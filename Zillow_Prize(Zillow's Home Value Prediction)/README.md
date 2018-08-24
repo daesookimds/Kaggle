@@ -1,4 +1,4 @@
-<img src="image/title.png" alt="subject_image" width="850" height="150">
+<img src="image/title.png" alt="subject_image" width="650" height="150">
 
 ```Project Period : 2018.06.14 ~ 2018.07.08```
 
