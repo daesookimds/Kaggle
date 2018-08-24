@@ -53,7 +53,7 @@
 
 - 2666 / 3779 : top 70%
 
-<img src="image/score_01.png" alt="subject_image" width="700" height="100">
+<img src="image/score.png" alt="subject_image" width="700" height="100">
 
 ### Feedback
 
