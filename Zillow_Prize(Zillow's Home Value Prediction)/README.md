@@ -119,7 +119,7 @@
 
 <img src="image/score.png" alt="subject_image" width="600" height="100">
 
-### Feedback
+### 피드백
 
 - 처음 프로젝트를 시작할 때 선형 회귀만으로 문제를 풀어보라는 제약조건을 가지고 시작하였다.
 - 비선형회귀 모형을 사용한다면 더 좋은 결과를 만들어 낼 수 있을 것 같다.
